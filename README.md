@@ -23,7 +23,13 @@ python pdf_payload_injector.py path_to_pdf_file ip_address
 ### Example
 
 ```bash
-python pdf_payload_injector.py example.pdf 192.168.1.1
+python pdf_payload_injector.py example.pdf --ip_address 192.168.1.1
+```
+```bash
+python pdf_payload_injector.py example.pdf --domain_name example.com
+```
+```bash
+python pdf_payload_injector.py example.pdf --ip_address 192.168.1.1 --domain_name example.com
 ```
 
 This command will modify `example.pdf` by injecting the specified payload containing the IP address `192.168.1.1` and create a new file `example.pdf.payload.pdf`.
